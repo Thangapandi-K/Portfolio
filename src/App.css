@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .topspace {
-    height: 50px;
-    margin: 25px 0px;
+    height: 20px;
+    margin: 15px 0px;
+}
+
+.name-text {
+    font-family: "Source Code Pro", serif;
+    font-weight: 400;
 }
 
 .carousel-inner {
@@ -14,4 +23,28 @@
 
 .certificate {
     height: 500px;
+}
+
+.certification-image {
+    width: 300px;
+}
+
+.card {
+    width: 18rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,10 +1,12 @@
 import React from 'react';
+import certification from '../assets/images/certifications.png'
 
 const Certifications = () => {
   return (
-    <div className="certificateContainer container" >
+    <div className="certificateContainer container row" >
         <div className="fs-1 fw-bold text-center my-3">Certifications</div>
-        <div id="myCarousel" className="carousel slide mx-auto" data-bs-ride="carousel">
+        <img src={certification} alt="" className='col-md-6 mx-auto certification-image'/>
+        <div id="myCarousel" className="carousel slide mx-auto col-md-6" data-bs-ride="carousel">
           <div id="carousalImg" className="carousel-inner">
             <img
               className="certificate justify-content-center carousel-item active image-fluid"
