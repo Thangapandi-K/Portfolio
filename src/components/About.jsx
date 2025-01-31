@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 import TypeWriter from './TypeWriter.jsx';
+import AboutImg from '../assets/images/about.png';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
                 </div>
             </div>
             <div className='aboutImg col-md-6 col-sm-12'>
-                <img className='img-fluid' src="./src/assets/images/about.png" alt="" />
+                <img className='img-fluid' src={AboutImg} alt="" />
             </div>
     </div>
   )

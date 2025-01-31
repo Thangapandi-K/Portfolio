@@ -1,6 +1,14 @@
 import React from 'react';
-import certification from '../assets/images/certifications.png'
-
+import certification from '../assets/images/certifications.png';
+import FSDOverall from '../assets/certifications/FSDOverall.png';
+import ReactJS from '../assets/certifications/ReactJS.png';
+import NodeJS from '../assets/certifications/NodeJS.png';
+import MongoDB from '../assets/certifications/MongoDB.png';
+import MySQL from '../assets/certifications/MySQL.png';
+import Javascript from '../assets/certifications/Javascript.png';
+import HTML from '../assets/certifications/HTML.png';
+import CSS from '../assets/certifications/CSS.png';
+import Bootstrap from '../assets/certifications/Bootstrap.png';
 const Certifications = () => {
   return (
     <div className="certificateContainer container row" >
@@ -10,47 +18,47 @@ const Certifications = () => {
           <div id="carousalImg" className="carousel-inner">
             <img
               className="certificate justify-content-center carousel-item active image-fluid"
-              src="./src/assets/certifications/FSDOverall.png"
+              src={FSDOverall}
               alt="fsd"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/ReactJS.png"
+              src={ReactJS}
               alt="react"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/NodeJS.png"
+              src={NodeJS}
               alt="nodejs"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/MongoDB.png"
+              src={MongoDB}
               alt="mongodb"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/MySQL.png"
+              src={MySQL}
               alt="mysql"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/Javascript.png"
+              src={Javascript}
               alt="javascript"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/HTML.png"
+              src={HTML}
               alt="HTML"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/CSS.png"
+              src={CSS}
               alt="css"
             />
             <img
               className="certificate justify-content-center carousel-item image-fluid"
-              src="./src/assets/certifications/Bootstrap.png"
+              src={Bootstrap}
               alt="bootstrap"
             />
           </div>
