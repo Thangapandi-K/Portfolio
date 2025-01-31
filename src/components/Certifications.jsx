@@ -22,6 +22,7 @@ const Certifications = () => {
         id="myCarousel"
         className="carousel slide mx-auto col-md-6"
         data-bs-ride="carousel"
+        data-bs-touch="true"
       >
         <div id="carousalImg" className="carousel-inner">
           <img
@@ -73,7 +74,7 @@ const Certifications = () => {
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-target="#myCarousel"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -82,7 +83,7 @@ const Certifications = () => {
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-target="#myCarousel"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
