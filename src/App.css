@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.topspace {
+    height: 50px;
+    margin: 25px 0px;
+}
+
+.carousel-inner {
+    margin: 10px auto;
+}
+
+.certificate {
+    height: 500px;
+}
