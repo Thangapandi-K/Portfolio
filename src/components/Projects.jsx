@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="projects container row">
       <div className="fs-1 fw-bold text-center my-3">Projects</div>
-      <div className="card-container gap-5 p-3 col-sm-12 col-lg-6 d-flex">
+      <div className="card-container gap-5 col-lg-9 col-md-12 row mx-auto">
         <div className="card p-3 rounded">
           <img src={ArtVista} className="card-img-top" alt="artVista" />
           <div className="card-body">
@@ -63,7 +63,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <img className="project-image col-sm-12 col-lg-6 " src={Project} alt="" />
+      <img className="project-image image-fluid col-lg-3 col-md-12" src={Project} alt="" />
     </div>
   );
 };
