@@ -43,7 +43,7 @@ const Projects = () => {
           <img src={CityWeatherApp} className="card-img-top" alt="artVista" />
           <div className="card-body">
             <h5 className="card-title">City Weather App</h5>
-            <p className="card-text">An Painting E-commerce Platform</p>
+            <p className="card-text">City Weather Finder</p>
             <div className="row gap-2">
               <a
                 href="https://city-weather-app-project.netlify.app/"
