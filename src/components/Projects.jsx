@@ -1,6 +1,7 @@
 
 import ArtVista from "../assets/projects/ArtVista.png";
 import CityWeatherApp from "../assets/projects/CityWeatherApp.png";
+import QRCode from "../assets/projects/QRCode.png";
 import Project from '../assets/images/projects.png';
 
 const Projects = () => {
@@ -66,6 +67,34 @@ const Projects = () => {
               </a>
               <a
                 href="https://github.com/Thangapandi-K/City-Weather-App"
+                className="btn btn-outline-secondary"
+                target="_blank"
+              >
+                Source-GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="card p-3 rounded">
+          <img src={QRCode} className="card-img-top" alt="artVista" />
+          <div className="card-body">
+            <h5 className="card-title">QR Code Generator</h5>
+            <p className="card-text">Generate your QR code and donwload</p>
+            <div className="row gap-2">
+            <span className="stacks">
+                <span className="tech-stack">ReactJS</span>
+                <span className="tech-stack">Public API</span>
+                <span className="tech-stack">CSS</span>
+              </span>
+              <a
+                href="https://qr-code-generator-webapp-tk.netlify.app/"
+                className="btn btn-outline-secondary"
+                target="_blank"
+              >
+                Preview
+              </a>
+              <a
+                href="https://github.com/Thangapandi-K/qr-code-generator"
                 className="btn btn-outline-secondary"
                 target="_blank"
               >
