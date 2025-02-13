@@ -1,4 +1,3 @@
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 import About from "./About";
 import Certifications from "./Certifications";
 import Projects from "./Projects";
