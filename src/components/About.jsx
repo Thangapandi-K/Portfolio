@@ -5,6 +5,7 @@ import {
 } from "react-icons/ai";
 import TypeWriter from "./TypeWriter.jsx";
 import AboutImg from "../assets/images/about.png";
+import logos  from "../assets/logos/Logos.js";
 import HTML5 from "../assets/logos/HTML5.png"
 import CSS from "../assets/logos/CSS.png"
 import BOOTSTRAP from "../assets/logos/BOOTSTRAP.png"
@@ -19,6 +20,7 @@ import REDUX from "../assets/logos/REDUX.png"
 import GIT from "../assets/logos/GIT.png"
 import GITHUB from "../assets/logos/GITHUB.png"
 import POSTMAN from "../assets/logos/POSTMAN.png"
+import SkillCard from "./SkillCard.jsx";
 
 const About = () => {
   return (
@@ -56,97 +58,7 @@ const About = () => {
               <AiOutlineGithub />
             </a>
           </div>
-          <div className="marquee enable-animation mt-3">
-            <ul className="marquee_content">
-              <div className="marquee_item">
-                <img src={HTML5} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={CSS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={BOOTSTRAP} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={JS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={REACTJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={REDUX} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={NODEJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={EXPRESSJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={JWT} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={MONGODB} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={MYSQL} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={GIT} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={GITHUB} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={POSTMAN} alt="" loading="lazy"/>
-              </div>
-            </ul>
-
-            <ul aria-hidden="true" className="marquee_content">
-              <div className="marquee_item">
-                <img src={HTML5} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={CSS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={BOOTSTRAP} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={JS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={REACTJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={REDUX} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={NODEJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={EXPRESSJS} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={JWT} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={MONGODB} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={MYSQL} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={GIT} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={GITHUB} alt="" loading="lazy"/>
-              </div>
-              <div className="marquee_item">
-                <img src={POSTMAN} alt="" loading="lazy"/>
-              </div>
-            </ul>
-          </div>
+          <SkillCard/>
           <a href="https://drive.google.com/file/d/1nP3bI4HPYcGJ_4CDG754KsK8nEK6f2D6/view?usp=sharing" target="_blank"><button className="btn btn-dark mt-3">My Resume</button></a>
         </div>
       </div>

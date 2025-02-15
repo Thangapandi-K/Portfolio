@@ -8,9 +8,9 @@ const Projects = () => {
   return (
     <div className="projects container row">
       <div className="fs-1 fw-bold text-center my-3">Projects</div>
-      <div className="card-container gap-5 col-lg-9 col-md-12 row mx-auto">
+      <div className="card-container gap-5 row mx-auto d-flex justify-content-center p-1">
         <div className="card p-3 rounded">
-          <img src={ArtVista} className="card-img-top" alt="artVista" />
+          <img src={ArtVista} className="card-img-top col-sm-12 col-md-6 col-lg-3" alt="artVista" />
           <div className="card-body">
             <h5 className="card-title">ArtVista Gallery</h5>
             <p className="card-text">An Painting E-commerce Platform</p>
@@ -48,7 +48,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="card p-3 rounded">
-          <img src={CityWeatherApp} className="card-img-top" alt="artVista" />
+          <img src={CityWeatherApp} className="card-img-top col-sm-12 col-md-6 col-lg-3" alt="city-weather-app" />
           <div className="card-body">
             <h5 className="card-title">City Weather App</h5>
             <p className="card-text">City Weather Finder</p>
@@ -76,7 +76,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="card p-3 rounded">
-          <img src={QRCode} className="card-img-top" alt="artVista" />
+          <img src={QRCode} className="card-img-top col-sm-12 col-md-6 col-lg-3" alt="qr-code-genrator" />
           <div className="card-body">
             <h5 className="card-title">QR Code Generator</h5>
             <p className="card-text">Generate your QR code and donwload</p>
@@ -104,7 +104,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <img className="project-image image-fluid col-lg-3 col-md-12" src={Project} alt="" />
     </div>
   );
 };
