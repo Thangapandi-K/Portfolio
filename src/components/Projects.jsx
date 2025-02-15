@@ -2,7 +2,6 @@
 import ArtVista from "../assets/projects/ArtVista.png";
 import CityWeatherApp from "../assets/projects/CityWeatherApp.png";
 import QRCode from "../assets/projects/QRCode.png";
-import Project from '../assets/images/projects.png';
 
 const Projects = () => {
   return (
