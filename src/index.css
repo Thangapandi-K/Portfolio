@@ -1,0 +1,212 @@
+/* Modern Editorial Aesthetic Design System
+   Tones:
+   - Dark Mode: Warm charcoal, graphite, deep slate, terracotta accent, warm off-white text.
+   - Light Mode: Warm alabaster/parchment (#faf9f6), soft stone (#f2f0ea), warm charcoal text (#1c2124), terracotta accent.
+   Strictly aesthetic, authentic typography & subtle organic atmospheric motions.
+*/
+
+:root {
+  /* Default Dark Mode */
+  --bg-primary: #0e1113;
+  --bg-secondary: #14181b;
+  --bg-surface: #191e22;
+  --bg-surface-elevated: #21272c;
+  --bg-glass: rgba(14, 17, 19, 0.8);
+
+  --text-primary: #f0f3f5;
+  --text-secondary: #a8b3ba;
+  --text-muted: #828f96;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.16);
+
+  --accent-warm: #b54f21;            /* Terracotta with certified WCAG AA/AAA compliant contrast (> 4.8:1 with white) */
+  --accent-warm-hover: #c45b29;
+  --accent-warm-subtle: rgba(181, 79, 33, 0.14);
+
+  --orb-1: rgba(217, 119, 70, 0.08);
+  --orb-2: rgba(184, 134, 87, 0.06);
+  --orb-3: rgba(100, 116, 139, 0.05);
+
+  --grid-line: rgba(255, 255, 255, 0.035);
+  --grid-cross: rgba(217, 119, 70, 0.15);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  --bg-primary: #fbfaf8;             /* Warm soft linen/parchment */
+  --bg-secondary: #f4f1ea;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ede9e0;
+  --bg-glass: rgba(251, 250, 248, 0.82);
+
+  --text-primary: #181d20;           /* Deep readable charcoal */
+  --text-secondary: #485258;
+  --text-muted: #5e6b72;
+
+  --border-subtle: rgba(24, 29, 32, 0.09);
+  --border-hover: rgba(24, 29, 32, 0.18);
+
+  --accent-warm: #c46332;
+  --accent-warm-hover: #b05527;
+  --accent-warm-subtle: rgba(196, 99, 50, 0.12);
+
+  --orb-1: rgba(196, 99, 50, 0.06);
+  --orb-2: rgba(180, 140, 90, 0.05);
+  --orb-3: rgba(140, 160, 180, 0.05);
+
+  --grid-line: rgba(24, 29, 32, 0.035);
+  --grid-cross: rgba(196, 99, 50, 0.12);
+
+  --shadow-card: 0 10px 30px -10px rgba(40, 30, 20, 0.07);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Atmospheric Aesthetic Ambient Motion */
+.ambient-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  contain: strict;
+}
+
+/* Subtle architectural grid pattern with radial vignette mask */
+.ambient-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 65% at 50% 35%, black 40%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 65% at 50% 35%, black 40%, transparent 85%);
+  opacity: 0.9;
+  transform: translateZ(0);
+}
+
+/* Very faint, slow atmospheric pulse traveling over the grid */
+.grid-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-warm-subtle) 0%, transparent 70%);
+  top: 15%;
+  left: 30%;
+  animation: gridDrift 20s infinite ease-in-out alternate;
+  pointer-events: none;
+  filter: blur(40px);
+  transform: translateZ(0);
+}
+
+@keyframes gridDrift {
+  0% { transform: translate3d(-80px, 0, 0) scale(1); opacity: 0.4; }
+  50% { transform: translate3d(120px, 60px, 0) scale(1.15); opacity: 0.7; }
+  100% { transform: translate3d(40px, -40px, 0) scale(0.9); opacity: 0.3; }
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.85;
+  transition: background 0.5s ease;
+  transform: translateZ(0);
+}
+
+.orb-primary {
+  width: 550px;
+  height: 550px;
+  background: var(--orb-1);
+  top: -120px;
+  left: 20%;
+  animation: floatPrimary 22s infinite ease-in-out alternate;
+}
+
+.orb-secondary {
+  width: 450px;
+  height: 450px;
+  background: var(--orb-2);
+  top: 45%;
+  right: -80px;
+  animation: floatSecondary 26s infinite ease-in-out alternate;
+}
+
+.orb-tertiary {
+  width: 500px;
+  height: 500px;
+  background: var(--orb-3);
+  bottom: -150px;
+  left: -100px;
+  animation: floatTertiary 30s infinite ease-in-out alternate;
+}
+
+@keyframes floatPrimary {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(60px, 40px, 0) scale(1.08); }
+  100% { transform: translate3d(-40px, 70px, 0) scale(0.95); }
+}
+
+@keyframes floatSecondary {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-50px, -60px, 0) scale(1.12); }
+  100% { transform: translate3d(30px, 40px, 0) scale(0.9); }
+}
+
+@keyframes floatTertiary {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(70px, -30px, 0) scale(1.05); }
+  100% { transform: translate3d(-30px, -50px, 0) scale(0.92); }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button, input, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent-warm);
+  color: #fff;
+}

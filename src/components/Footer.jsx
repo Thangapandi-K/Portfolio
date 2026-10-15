@@ -1,32 +1,45 @@
+import React from "react";
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="bg-dark footer text-light gap-3 p-3">
-      <div className="d-flex gap-5 fs-2">
-        <a
-          className="link-light icon-social"
-          href="https://www.linkedin.com/in/thangapandi-k/"
-          target="_blank"
-        >
-          <AiOutlineLinkedin />
-        </a>
-        <a
-          className="link-light icon-social"
-          href="mailto:thangapandi.chella@gmail.com"
-        >
-          <AiOutlineMail />
-        </a>
-        <a
-          className="link-light icon-social"
-          href="https://github.com/Thangapandi-K"
-          target="_blank"
-        >
-          <AiOutlineGithub />
-        </a>
+    <footer className="footer">
+      <div className="footer-container">
+        <p className="footer-text">
+          &copy; {currentYear} Thangapandi K. All rights reserved.
+        </p>
+
+        <div className="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/thangapandi-k/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+            aria-label="LinkedIn"
+          >
+            <AiOutlineLinkedin />
+          </a>
+          <a
+            href="https://github.com/Thangapandi-K"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+            aria-label="GitHub"
+          >
+            <AiOutlineGithub />
+          </a>
+          <a
+            href="mailto:thangapandi.chella@gmail.com"
+            className="footer-link"
+            aria-label="Email"
+          >
+            <AiOutlineMail />
+          </a>
+        </div>
       </div>
-      <div className="fs-5"> 2025 &copy; Thangapandi_K</div>
-    </div>
+    </footer>
   );
 };
 
